@@ -1,0 +1,40 @@
+<view class="home-bottom" >
+  <scroll-view class="home-bottom-scroll" scroll-y="true">
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+    <view >123</view>
+  </scroll-view>
+  
+</view>
