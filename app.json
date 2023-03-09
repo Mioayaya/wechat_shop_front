@@ -1,0 +1,42 @@
+{
+	"pages": [
+		"pages/home/index",
+		"pages/dynamic/index",
+		"pages/messages/index",
+		"pages/mine/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#34a7fc",
+		"navigationBarTitleText": "xcw",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#43b6fb",
+		"backgroundColor": "#f7f7f5",
+		"list":[{
+			"pagePath": "pages/home/index",
+			"text": "首页",
+			"iconPath": "imges/icons/home1.png",
+			"selectedIconPath": "imges/icons/home2.png"
+		}, {
+			"pagePath": "pages/dynamic/index",
+			"text": "动态",
+			"iconPath": "imges/icons/dynamic1.png",
+			"selectedIconPath": "imges/icons/dynamic2.png"
+		}, {
+			"pagePath": "pages/messages/index",
+			"text": "消息",
+			"iconPath": "imges/icons/messages1.png",
+			"selectedIconPath": "imges/icons/messages2.png"
+		}, {
+			"pagePath": "pages/mine/index",
+			"text": "我的",
+			"iconPath": "imges/icons/mine1.png",
+			"selectedIconPath": "imges/icons/mine2.png"
+		}]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}

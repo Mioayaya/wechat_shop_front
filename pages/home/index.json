@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "home-top": "components/home-top/index"
+  }
+}

@@ -1,0 +1,10 @@
+<view class="home-top">
+  <view class="avatar">
+    <image src="../../../../imges/home/home-background.png" alt=""/>
+  </view>
+  <view class="search">
+    <image class="search-icon" src="../../../../imges/icons/search.png" alt=""/>
+    <input class="search-input" type="text"/>
+  </view>
+</view>
+

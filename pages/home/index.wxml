@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="home">
+  <home-top/>
+  <!-- <view class="home-top">
+    <view class="msg">{{msg}}</view>
+    <view class="count">{{count}}</view>
+    <view >
+      <h2>list:</h2>
+      <view wx:for="{{songs}}" wx:key="index">
+        <view>{{item.ly}}</view>
+      </view>
+    </view>
+  </view> -->
+  <view class="home-bottom" bind:touchmove="">下半</view>
+</view>
