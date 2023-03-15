@@ -3,7 +3,9 @@
 		"pages/home/index",
 		"pages/dynamic/index",
 		"pages/messages/index",
-		"pages/mine/index"
+		"pages/mine/index",
+		"pages/login/index",
+		"pages/register/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

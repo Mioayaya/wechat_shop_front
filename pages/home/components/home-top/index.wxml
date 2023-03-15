@@ -1,6 +1,6 @@
 <view class="home-top">
   <view class="avatar">
-    <image src="../../../../imges/home/home-background.png" alt=""/>
+    <image src="https://cdn.luogu.com.cn/upload/usericon/1.png" alt=""/>
   </view>
   <view class="search">
     <image class="search-icon" src="../../../../imges/icons/search.png" alt=""/>

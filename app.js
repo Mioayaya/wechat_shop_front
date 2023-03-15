@@ -15,6 +15,10 @@ App({
   },
   // 全局数据
   globalData: {
+    baseUrl: 'http://127.0.0.1:5000',
+    isLogin: false,
+    userData: {    
+    },
     CXKname: '蔡徐坤'
   }
 })
