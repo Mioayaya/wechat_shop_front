@@ -1,69 +1,68 @@
+import { userRegister } from "../../server/api/user"
 
 /**
  * index.js
 */
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    userData: {
+      name: '',
+      email: '',
+      password: '',
+      rePassword: '',
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  bindKeyInputName(e) {
+    this.setData({
+      ['userData.name']: e.detail.value
+    })
+  }, 
+  bindKeyInputEmail(e) {
+    this.setData({
+      ['userData.email']: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  bindKeyInputPassword(e) {
+    this.setData({
+      ['userData.password']: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  bindKeyInputRePassword(e) {
+    this.setData({
+      ['userData.rePassword']: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  formSubmit(e) {
+    console.log(this.data.userData);
+    if(!this.data.userData.name) {
+      wx.showToast({title: '昵称不能为空~',icon: 'error',duration: 2000});
+    } else if(!this.data.userData.email) {
+      wx.showToast({title: '邮箱不能为空~',icon: 'error',duration: 2000});
+    } else if(!this.data.userData.password) {
+      wx.showToast({title: '密码不能为空~',icon: 'error',duration: 2000});
+    } else if(this.data.userData.password !== this.data.userData.rePassword) {
+      wx.showToast({title: '两次密码不一样--',icon: 'error',duration: 2000});
+    } else {
+      try {
+        wx.showLoading({title:'加载中···'});
+        userRegister(this.data.userData).then(res => {
+          wx.hideLoading();
+          const { isSuccess,msg } = res.data;          
+          if(isSuccess) {
+            wx.showToast({title:msg,icon:'success',duration:2000});
+            wx.redirectTo({url:'/pages/login/index'});
+          }else {
+            wx.showToast({title:msg,icon:'error',duration:2000});
+          }
+        })
+      } catch(err) {
+        console.log(err);
+        wx.hideLoading();
+        wx.showModal(err);
+      }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  bindindTapToRegister() {    
+    wx.redirectTo({url:'/pages/login/index'});
   }
 })

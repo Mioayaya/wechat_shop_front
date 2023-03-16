@@ -1,1 +1,39 @@
-/**index.wxss**/
+.register-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #99cced;
+  margin-top: 2vh;
+}
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  margin-top: 2vh;
+  padding: 0 5vw;
+  height: 28vh;
+}
+
+.register-email,.register-password {
+  padding-left: 3vw;
+  border-radius: 20rpx;
+  height: 6vh;
+  line-height: 6vh;
+  border: #e4e5eb 1px solid;
+}
+
+.register-email:hover,.register-password:hover {
+  border-color: #51a7e0;
+}
+
+.register-buttons {
+  display: flex;
+  padding: 0 5vw;
+  margin-top: 1vh;
+}
+
+.register-buttons button {
+  width: 45%;
+  border-radius: 20rpx;
+  background-color: #f0f1f5;
+}

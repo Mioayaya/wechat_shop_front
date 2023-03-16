@@ -1,8 +1,7 @@
 import { userLogin } from "../../server/api/user";
 
-/**
- * index.js
-*/
+const app = getApp();
+
 Page({
 
   /**
@@ -24,14 +23,51 @@ Page({
       ['userLogin.password']: e.detail.value
     })
   },
-  formSubmit(e) {
-    console.log(this.data.userLogin);
+  formSubmit(e) {    
     if(!this.data.userLogin.email) {
-      wx.showModal({content: '请输入邮箱'});
+      wx.showToast({
+        title: '请输入邮箱',
+        icon: 'error',
+        duration: 2000
+      })
     }else if(!this.data.userLogin.password) {
-      wx.showModal({content: '密码不能为空'});
+      wx.showToast({
+        title: '密码不能为空',
+        icon: 'error',
+        duration: 2000
+      })
     }else {
-      userLogin(this.data.userLogin)
+      try {
+        wx.showLoading({title:'登录中···'});
+        userLogin(this.data.userLogin).then(res => {
+          wx.hideLoading();
+          const { userData,msg } = res.data;          
+          if(userData) {
+            app.globalData.userData = res.data.userData;
+            app.globalData.isLogin = true;
+            wx.setStorage({
+              key: 'key',
+              data: {
+                isLogin: true,
+                userData: res.data.userData,
+              },
+            })
+            wx.switchTab({url: '/pages/mine/index'});
+          }else {
+            wx.showToast({
+              title: msg,
+              icon: 'error',
+              duration: 2000
+            })
+          }
+        });
+      } catch(err) {
+        wx.hideLoading();
+        wx.showModal(err);
+      }
     }
+  },
+  bindindTapToRegister() {
+    wx.redirectTo({url:'/pages/register/index'});
   }
 })

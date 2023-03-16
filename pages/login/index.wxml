@@ -6,8 +6,8 @@
       <input bindinput="bindKeyInputPassword" class="login-password" password type="text" placeholder="密码"/>
     </view>
     <view class="login-buttons">
-      <button formType="submit">登录</button>
-      <button >注册</button>
+      <button formType="submit">登录</button>      
+      <button bindtap="bindindTapToRegister">前往注册</button>
     </view>
   </form>
 </view>
