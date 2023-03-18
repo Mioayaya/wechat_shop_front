@@ -1,19 +1,32 @@
 .home-top {
-  height: 13vh;
-  background-color: #34a7fc;
+  height: 23vh;
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items:flex-end;
+  justify-content: space-around;  
+  position: relative;  
 }
 
-.avatar {
+.home-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;  
+}
+
+.home-top-avatar,.home-top-search {
+  z-index: 1;
+  margin-bottom: 3vh;
+}
+
+.home-top-avatar {
   height: 7vh;
   width: 7vh;
   background-color: #666;
   border-radius: 50%;
 }
 
-.avatar image {
+.home-top-avatar image {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -21,7 +34,7 @@
   background-repeat: no-repeat;
 }
 
-.search {
+.home-top-search {
   display: flex;
   position: relative;
   margin-left: -5vw;
@@ -41,6 +54,6 @@
   width: 65vw;
   padding-left: 8vw;
   color: #000;
-  background-color: #268ed9;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 3vh;
 }

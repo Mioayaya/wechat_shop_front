@@ -2,11 +2,14 @@
 // App构造函数执行并传入1个对象
 
 App({
-  onLaunch(options) {
-    console.log('小程序初始化-Launch',options);
+  onLaunch(options) {    
+    wx.getSystemInfo({
+      success: res => {
+        this.globalData.height = res.statusBarHeight
+      }
+    })
   },
   onShow(options) {
-    console.log('小程序初展示-show',options);
   },
   onHide() {
   },
@@ -19,6 +22,7 @@ App({
     isLogin: false,
     userData: {    
     },
-    CXKname: '蔡徐坤'
+    CXKname: '蔡徐坤',
+    height: 0
   }
 })

@@ -4,7 +4,7 @@
 const app = getApp();
 
 Page({
-  data: {
+  data: {    
     msg: '鸡你太美',
     count: 0,
     songs: [{

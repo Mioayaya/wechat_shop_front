@@ -5,13 +5,11 @@
 		"pages/messages/index",
 		"pages/mine/index",
 		"pages/login/index",
-		"pages/register/index"
+		"pages/register/index",
+		"pages/search/index"
 	],
 	"window": {
-		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#34a7fc",
-		"navigationBarTitleText": "xcw",
-		"navigationBarTextStyle": "black"
+		"navigationStyle": "custom"
 	},
 	"tabBar": {
 		"color": "#666",
