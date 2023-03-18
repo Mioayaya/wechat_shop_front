@@ -1,13 +1,16 @@
-<view class="login">
-  <form catchsubmit="formSubmit">
-    <view class="login-title">登录</view>
-    <view class="login-card">
-      <input bindinput="bindKeyInputEmail" class="login-email" type="text" placeholder="邮箱"/>
-      <input bindinput="bindKeyInputPassword" class="login-password" password type="text" placeholder="密码"/>
-    </view>
-    <view class="login-buttons">
-      <button formType="submit">登录</button>      
-      <button bindtap="bindindTapToRegister">前往注册</button>
-    </view>
-  </form>
+<view >
+  <backHome backUrl="/pages/home/index"/>
+  <view class="login">
+    <form catchsubmit="formSubmit">
+      <view class="login-title">登录</view>
+      <view class="login-card">
+        <input bindinput="bindKeyInputEmail" class="login-email" type="text" placeholder="邮箱"/>
+        <input bindinput="bindKeyInputPassword" class="login-password" password type="text" placeholder="密码"/>
+      </view>
+      <view class="login-buttons">
+        <button formType="submit">登录</button>      
+        <button bindtap="bindindTapToRegister">前往注册</button>
+      </view>
+    </form>
+  </view>
 </view>

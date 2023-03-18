@@ -4,14 +4,12 @@ Component({
   properties: {
 
   },
-  data: {
-    height: app.globalData.height,
+  data: {    
     userData: {
     }
   }, 
   methods: {
-    tapSearch() {
-      console.log('hh');
+    tapSearch() {      
       wx.redirectTo({
         url: '/pages/search/index'
       })

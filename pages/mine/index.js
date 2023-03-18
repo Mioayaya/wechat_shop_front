@@ -5,8 +5,7 @@ Page({
 
   },
   onLoad: function(options) {
-    if(!app.globalData.isLogin) {
-      console.log('未登录');
+    if(!app.globalData.isLogin) {      
       wx.redirectTo({
         url: '/pages/login/index'
       })
