@@ -1,4 +1,5 @@
 <view class="register">
+  <back-home backUrl="/pages/home/index"/>
   <form catchsubmit="formSubmit">
     <view class="register-title">注册</view>
     <view class="register-card">

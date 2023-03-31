@@ -1,10 +1,11 @@
 .back-home {
   display: flex;
-  height: 6vh;
+  height: 6vh;  
   padding-top: 2vh;
   padding-left: 5vw;
 }
 
 .back-home-title {
   font-size: 1.5rem;
+  margin-top: 5vh;
 }
