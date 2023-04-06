@@ -1,0 +1,36 @@
+.mine-top {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mine-top-top {
+  flex: 2;
+  display: flex;
+  background-color: red;
+  align-items: center;  
+}
+
+.mine-avatar-left {
+
+}
+
+.mine-avatar-right {
+  
+}
+
+
+.mine-top-bottom {
+  flex: 1;
+  background-color: black;
+}
+
+.mine-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1;
+}
