@@ -7,8 +7,7 @@
 
 .mine-top-top {
   flex: 2;
-  display: flex;
-  background-color: red;
+  display: flex;  
   align-items: center;  
 }
 

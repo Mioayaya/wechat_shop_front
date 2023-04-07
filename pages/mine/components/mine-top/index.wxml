@@ -1,15 +1,14 @@
 <view class="mine-top">
   <view class="mine-top-top">
-    <view class="mine-avatar-left">
-      123
-      <!-- <image class=user-avatar""/> -->
+    <view class="mine-avatar-left">      
+      <image class="user-avatar avatar" src="{{userData.avatar}}" alt=""/>
     </view>
 
     <view class="mine-avatar-right">
       <view class="mine-avatar-right-l1">
-        <view class="user-name">星川麻冬</view>
+        <view class="user-name">{{userData.user_name}}</view>
         <view class="user-change">修改信息</view>
-        <view class="user-level">Lv5</view>
+
       </view>
       <view class="mine-avatar-right-l2">年度大会员?</view>
       <view class="mine-avatar-right-l3">{{"硬币:"}}</view>

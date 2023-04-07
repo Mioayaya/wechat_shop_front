@@ -17,3 +17,11 @@ export const userRegister = (data) => {
     data
   })
 }
+
+// 获取用户信息
+export const userInfor = (uid) => {
+  return request({
+    url: `/api/user/infor?uid=${uid}`,
+    method: 'get'
+  })
+}
