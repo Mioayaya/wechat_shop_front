@@ -1,35 +1,61 @@
 .mine-top {
-  height: 40vh;
+  height: 35vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   position: relative;
 }
 
 .mine-top-top {
   flex: 2;
-  display: flex;  
-  align-items: center;  
+  display: flex;
+  align-items: center;
+  margin-top: 6vh;
 }
 
 .mine-avatar-left {
-
+  height: 7vh;
+  width: 7vh;
+  padding: 0 5vw;
 }
 
-.mine-avatar-right {
-  
+.mine-avatar-right-l1 {
+  display: flex;  
 }
 
+.user-name {
+  margin-right: 3vw;
+}
 
 .mine-top-bottom {
   flex: 1;
-  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mine-bg {
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background-size: cover;
   object-fit: cover;
   z-index: -1;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+
+.user-font {
+  font-size: 1.3rem;
 }

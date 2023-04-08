@@ -13,7 +13,7 @@ Page({
       })
     }else {
       const uid = app.globalData.userData.uid;      
-      this.getUserData(uid);
+      this.getUserData(uid);      
     }
   },  
   getUserData(uid) {
@@ -21,6 +21,7 @@ Page({
       this.setData({
         userData: res.data.userData
       })
+      console.log(res.data.userData);
     }).catch(err => console.log(err))
   }
 })
