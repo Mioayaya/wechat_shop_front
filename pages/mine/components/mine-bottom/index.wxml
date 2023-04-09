@@ -1,0 +1,21 @@
+<view class="mine-bottom">
+  <view class="collect">
+    <view class="collect-box" wx:for="{{collectList}}" wx:key="key">
+      <image class="collect-box-icon icon" mode="heightFix" src="{{item.iconSrc}}"/>
+      <span class="collect-box-name">{{item.name}}</span>
+    </view>
+  </view>
+
+  <view class="my-order">
+    <view class="order-title">
+      <view class="title">我的订单</view>
+      <view class="all">全部 ></view>
+    </view>
+    <view class="my-order-card">
+      <view class="order-box" wx:for="{{myOrder}}" wx:key="key">
+        <image class="order-box-icon icon" mode="heightFix" src="{{item.iconSrc}}" />
+        <span class="order-box-name">{{item.name}}</span>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "mine-top": "components/mine-top/index"
+    "mine-top": "components/mine-top/index",
+    "mine-bottom": "components/mine-bottom/index"
   }
 }

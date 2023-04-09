@@ -18,8 +18,30 @@
   padding: 0 5vw;
 }
 
+.mine-avatar-right {
+  width: 40vw;
+}
+
 .mine-avatar-right-l1 {
   display: flex;  
+}
+
+.mine-avatar-right-l2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fbf0fa;
+  margin: 0.5vh 0;
+}
+
+.mine-avatar-right-l2-font {
+  background-color: #fd588b;
+  padding: 0 2vw;
+  border-radius: 2vh;
+}
+
+.mine-avatar-right-l3 {
+  display: flex;
+  justify-content: space-between;  
 }
 
 .user-name {
@@ -31,6 +53,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #dedede;
+  padding-bottom: 3vh;
 }
 
 .box {
@@ -58,4 +82,8 @@
 
 .user-font {
   font-size: 1.3rem;
+}
+
+.icon {
+  height: 2.7vh;
 }

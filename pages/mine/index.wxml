@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
   <mine-top userData="{{userData}}"/>
+  <mine-bottom />
 </view>
