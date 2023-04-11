@@ -18,4 +18,8 @@
       </view>
     </view>
   </view>
+
+  <view class="other">
+    <image src="/imges/video/dog.gif" mode="aspectFill"/>
+  </view>
 </view>

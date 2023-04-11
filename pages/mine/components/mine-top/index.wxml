@@ -6,11 +6,11 @@
 
     <view class="mine-avatar-right">
       <view class="mine-avatar-right-l1">
-        <view class="user-name user-font">{{userData.user_name}}</view>
+        <view class="user-name user-font">{{userData.user_name}}</view>        
         <image class="icon" mode="heightFix" src="/imges/icons/change.png"/>
       </view>
       <view class="mine-avatar-right-l2">
-        <span class="mine-avatar-right-l2-font">年度大会员</span>
+        <span class="mine-avatar-right-l2-font">年度大会员</span>        
       </view>
       <view class="mine-avatar-right-l3">
         <view class="money">余额：{{userData.money}}</view>

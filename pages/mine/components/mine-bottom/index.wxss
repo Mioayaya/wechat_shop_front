@@ -57,6 +57,21 @@
   align-items: center;
 }
 
+.other {
+  background-color: #fff;
+  width: 95vw;
+  margin: auto;
+  margin-top: 3vh;
+  height: 38vh;
+  border-radius: 2vh;
+}
+
+.other image {
+  width: 95vw;
+  height: 38vh;
+  border-radius: 2vh;
+}
+
 .icon {
   height: 4vh;
 }
