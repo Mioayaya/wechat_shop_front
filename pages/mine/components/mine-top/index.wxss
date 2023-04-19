@@ -19,7 +19,7 @@
 }
 
 .mine-avatar-right {
-  width: 40vw;
+  width: 48vw;
 }
 
 .mine-avatar-right-l1 {
@@ -42,6 +42,11 @@
 .mine-avatar-right-l3 {
   display: flex;
   justify-content: space-between;  
+}
+
+.mine-avatar-right-l3 .shop {
+  background-color: #fbf0fa;
+  border-radius: 1vh;
 }
 
 .user-name {

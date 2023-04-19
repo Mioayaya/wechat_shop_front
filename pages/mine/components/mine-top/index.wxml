@@ -15,6 +15,7 @@
       <view class="mine-avatar-right-l3">
         <view class="money">余额：{{userData.money}}</view>
         <view class="inb">硬币：{{userData.inb}}</view>
+        <view class="shop" wx:if="{{userData.shop_id}}">我的店铺</view>
       </view>
     </view>
   </view>

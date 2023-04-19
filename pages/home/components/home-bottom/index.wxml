@@ -1,40 +1,9 @@
 <view class="home-bottom" >
-  <scroll-view class="home-bottom-scroll" scroll-y="true">
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
-    <view >123</view>
+  <scroll-view class="home-bottom-scroll" scroll-y="true">    
+    <image 
+      src="/imges/commodities/c_1/cover.jpg" 
+      bindtap="testMethods"
+    />
   </scroll-view>
   
 </view>
