@@ -16,6 +16,11 @@ Page({
   // 页面出现在前台时执行
   onShow: function() {
     // 慎重做逻辑处理
+    
+  },
+  // 页面首次渲染完毕时执行
+  onReady: function() {
+    this.getHomeCommodities();
     wx.getStorage({
       key: 'key',
       success (res) {
@@ -27,10 +32,6 @@ Page({
     })
     this.setData({ commodtityL: app.globalData.homeCommodtities.commodtityL});
     this.setData({ commodtityR: app.globalData.homeCommodtities.commodtityR});
-  },
-  // 页面首次渲染完毕时执行
-  onReady: function() {
-    this.getHomeCommodities();
   },
   // 页面从前台变为后台时执行
   onHide: function() {
