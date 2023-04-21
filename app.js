@@ -22,6 +22,10 @@ App({
     isLogin: false,
     userData: {    
     },
+    homeCommodtities: {
+      commodtityL: [],
+      commodtityR: []
+    },
     CXKname: '蔡徐坤',
     height: 0
   }

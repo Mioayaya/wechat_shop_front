@@ -1,5 +1,5 @@
 <!--index.wxml-->
 <view class="home">
   <home-top />
-  <home-bottom />
+  <home-bottom commodtityL="{{commodtityL}}" commodtityR="{{commodtityR}}"/>
 </view>
