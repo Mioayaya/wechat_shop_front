@@ -1,5 +1,5 @@
 <view >
-  <backHome backUrl="/pages/home/index"/>
+  <backHome delta="1"/>
   <view class="login">
     <form catchsubmit="formSubmit">
       <view class="login-title">登录</view>

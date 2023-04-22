@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "back-home": "/components/backHome"
+    "backHome": "/components/backHome"
   }
 }

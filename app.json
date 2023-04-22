@@ -6,7 +6,8 @@
 		"pages/mine/index",
 		"pages/login/index",
 		"pages/register/index",
-		"pages/search/index"
+		"pages/search/index",
+		"pages/commodtity/index"
 	],
 	"window": {
 		"navigationStyle": "custom"

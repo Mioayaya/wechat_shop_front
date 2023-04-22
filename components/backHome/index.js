@@ -7,7 +7,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    backUrl: '',
+    delta: '',
   },
 
   /**
@@ -22,9 +22,12 @@ Component({
    */
   methods: {
     bindBack() {
-      wx.switchTab({
-        url: this.properties.backUrl
+      wx.navigateBack({
+        delta: this.properties.delta
       })
+      // wx.switchTab({
+      //   url: this.properties.backUrl
+      // })
     }
   }
 })

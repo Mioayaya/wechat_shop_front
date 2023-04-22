@@ -1,5 +1,5 @@
 <view>
-  <backHome backUrl="/pages/home/index" />
+  <backHome delta="1" />
   <view class="search">  
     搜索页面
   </view>

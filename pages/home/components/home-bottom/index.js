@@ -13,12 +13,14 @@ Component({
   data: {    
   },
   methods: {
-    testMethods() {
-      // shopSearch({
-      //   id: 1000000
-      // }).then(res => {
-      //   console.log(res);
-      // })
+    touchCommodtity(e) {
+      wx.navigateTo({
+        url: `/pages/commodtity/index`,
+        success: function(res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', { data: e.currentTarget.dataset.item })
+        }
+      })
     }
   }
 })

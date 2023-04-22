@@ -10,7 +10,7 @@ Component({
   }, 
   methods: {
     tapSearch() {      
-      wx.redirectTo({
+      wx.navigateTo({
         url: '/pages/search/index'
       })
     }

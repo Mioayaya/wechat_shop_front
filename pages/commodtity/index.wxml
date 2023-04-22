@@ -1,0 +1,36 @@
+<view class="commodity">
+  <backHome delta="1"/>
+  
+  <div class="contain">
+    <swiper 
+      indicator-dots="{{true}}" 
+      autoplay="{{false}}"
+      duration="{{500}}"
+      class="swiper"
+    >
+      <block wx:for="{{commodtityData.data.content_img_src}}" wx:key="*this">
+        <swiper-item>
+          <image class="swiper-image" src="{{item}}" mode="aspectFill"/>          
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <div class="contain-title">
+      <view class="contain-price">
+        <span>￥</span> 
+        <span class="card-price">{{commodtityData.data.commodity_price}}</span>
+      </view>
+      <div class="contain-name">{{commodtityData.data.commodity_name}}</div>
+    </div>
+
+    <div class="contain-pdd">
+      <span class="contain-pdd-title">这些人拼团,参与可立即拼成</span>
+      
+    </div>
+  </div>
+
+  <!-- 底边工具栏 -->
+  <view class="bottom-tap">
+    底边工具栏
+  </view>
+</view>

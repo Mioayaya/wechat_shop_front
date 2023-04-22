@@ -2,7 +2,7 @@
   <scroll-view class="home-bottom-scroll" scroll-y="true" enable-flex>
     <div class="top">
       <div class="left">
-        <div class="card" wx:for="{{commodtityL}}" wx:key="commodity_id">
+        <div class="card" wx:for="{{commodtityL}}" wx:key="commodity_id" bindtap="touchCommodtity" data-item="{{item}}">
           <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
           <span class="card-name">{{item.commodity_name}}</span>
           <view class="price">
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="right">
-        <div class="card" wx:for="{{commodtityR}}" wx:key="commodity_id">
+        <div class="card" wx:for="{{commodtityR}}" wx:key="commodity_id" bindtap="touchCommodtity" data-item="{{item}}">
           <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
           <span class="card-name">{{item.commodity_name}}</span>
           <view class="price">

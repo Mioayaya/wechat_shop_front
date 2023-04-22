@@ -1,0 +1,60 @@
+.commodity {
+  background-color: #f4f4f4;
+}
+
+.swiper {
+  height: 45vh;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.bottom-tap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  border-top: 1rpx #efefef solid;
+}
+
+.contain-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vw;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  border-bottom: 1rpx solid #fc6a9b;
+  background-color: #fff;
+}
+
+.card-price {
+  font-size: 1.7rem;
+}
+
+.contain-price {
+  color: #fc6a9b;
+  display: inline-block;
+}
+
+.contain-name {
+  margin-top: 1vh;
+  font-weight: 600;
+}
+
+.contain-pdd {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;  
+  border-radius: 2vw;
+  height: 15vh;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  background-color: #fff;
+}

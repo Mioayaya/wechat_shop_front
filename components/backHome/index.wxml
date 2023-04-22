@@ -1,4 +1,2 @@
 <!-- 返回指定页面 -->
-<view class="back-home">  
-  <view class="back-home-title" bindtap="bindBack">返回</view>
-</view>
+<view class="back-home" bindtap="bindBack">{{'<'}}</view>
