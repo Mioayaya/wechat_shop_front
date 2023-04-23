@@ -1,5 +1,6 @@
 .commodity {
   background-color: #f4f4f4;
+  padding-bottom: 8vh;
 }
 
 .swiper {
@@ -20,12 +21,13 @@
   right: 0;
   height: 8vh;
   border-top: 1rpx #efefef solid;
+  background-color: #fff;
 }
 
 .contain-title {
   display: flex;
   flex-direction: column;
-  margin-top: 1vh;
+  padding-top: 1vh;
   padding-bottom: 1vh;
   padding-left: 2vw;
   border-bottom-left-radius: 2vw;
@@ -48,13 +50,124 @@
   font-weight: 600;
 }
 
+.contain-spec {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  margin-top: 2vh;
+  background-color: #fff;
+  border-radius: 2vh;
+}
+
+.contain-spec .contain-spec-s {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+}
+
+.contain-spec .contain-spec-s .title {
+  width: 10vw;
+  background-color: red;
+}
+
+.contain-spec .contain-spec-s .content {
+  flex: 1;
+  background-color: #fc6a9b;
+  display: flex;
+}
+
+.contain-spec .contain-spec-s .content .box {
+  display: flex;
+  flex-direction: column;
+}
+
 .contain-pdd {
+  height: 5vh;
+}
+
+.contain-photo {
+  
+}
+
+.contain-detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  background-color: #fff;
+  padding-top: 2vh;
+  border-radius: 2vh;
+}
+
+.contain-detail .title {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 2vw;
+  margin-bottom: 1vh;
+}
+
+.contain-detail .introduce {
+  display: flex;
+  flex-direction: column;
+}
+
+.contain-detail .introduce .title {
+  display: inline-block;  
+  background-color: #f2f3f5;
+  color: #a3afb7;
+  font-weight: 600;  
+  width: 20vw;
+  margin-left: 0;
+  padding: 1vw 3vw 1vw 2vw;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.contain-detail .introduce .text {
+  padding: 0 1vh 2vw;
+  font-size: small;
+  line-height: 2.2vh;
+}
+
+.contain-detail .imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contain-detail .imgs image {
+  width: 100vw;  
+  object-fit: cover;
+  background-size: cover;
+}
+
+.conatin-tips {
+  display: flex;
+  flex-direction: column;
   margin-top: 1vh;
+  margin-bottom: 1vh;
+  background-color: #fff;
+  padding: 2vh 0 0 2vw;
+  border-radius: 2vh;
+}
+
+.conatin-tips .title {
+  font-size: small;
+  font-weight: 600;
+}
+
+.conatin-tips .text {
+  margin-top: 1vh;
+  font-size: smaller;
+  line-height: 2.5vh;  
+}
+
+
+.card {
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;  
-  border-radius: 2vw;
-  height: 15vh;
-  padding-top: 1vw;
+  border-radius: 2vh;
+  height: 5vh;
+  padding-top: 2vh;
   padding-left: 2vw;
   background-color: #fff;
 }

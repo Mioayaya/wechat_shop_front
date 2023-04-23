@@ -1,5 +1,5 @@
 .back-home {
-  position: absolute;
+  position: fixed;
   z-index: 99;      
   margin-top: 5vh;
   margin-left: 5vw;

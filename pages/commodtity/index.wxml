@@ -23,10 +23,60 @@
       <div class="contain-name">{{commodtityData.data.commodity_name}}</div>
     </div>
 
-    <div class="contain-pdd">
-      <span class="contain-pdd-title">这些人拼团,参与可立即拼成</span>
-      
+    <!-- 参数 规格， 参数有的话 -->
+    <div class="contain-spec">
+      <div class="contain-spec-s">
+        <span class="title">参数</span>
+        <div class="content">
+          <div class="box">
+            <div class="top">title</div>
+            <div class="bottom">参数</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contain-spec-p">
+        <span class="title">规格</span>
+      </div>
     </div>
+
+    <div class="contain-pdd card">
+      <span class="contain-pdd-title">这些人拼团,参与可立即拼成</span>      
+    </div>
+
+    <!-- 晒图 -->
+    <div class="contain-photo card">
+      晒图
+    </div>
+
+    <!-- 店铺 -->
+    <div class="sontain-shop card">
+      店铺
+    </div>
+
+    <!-- 商品详情 -->
+    <div class="contain-detail">
+      <span class="title">商品详情</span>
+      <div class="introduce">
+        <span class="title">{{'© 商品介绍'}}</span>
+        <view class="text" wx:if="{{commodtityData.data.details_txt}}">{{commodtityData.data.details_txt}}</view>
+      </div>
+      <div class="imgs">
+        <image 
+          wx:for="{{commodtityData.data.details_img_src}}" 
+          wx:key="*this" 
+          src="{{item}}" 
+          mode="widthFix"
+        />
+      </div>
+    </div>
+
+    <!-- 运费说明 -->
+    <div class="conatin-tips">
+      <span class="title">运费说明</span>
+      <span class="text">{{text}}</span>
+    </div>
+
   </div>
 
   <!-- 底边工具栏 -->

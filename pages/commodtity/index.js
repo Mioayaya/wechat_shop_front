@@ -1,7 +1,8 @@
 Page({
   data: {
     id: '',
-    commodtityData: {}
+    commodtityData: {},
+    text: '不满足包邮条件(校内免费配送)的订单，江浙沪地区10元运费，其他地区15元。可配送区域为中国大陆地区(除特殊偏远地区),收获地址在此之外的地区请勿下单',
   },
 
   onLoad: function (options) {    
