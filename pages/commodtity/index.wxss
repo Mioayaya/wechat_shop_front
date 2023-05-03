@@ -67,12 +67,12 @@
 
 .contain-spec .contain-spec-s .title {
   width: 10vw;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .contain-spec .contain-spec-s .content {
   flex: 1;
-  background-color: #fc6a9b;
+  /* background-color: #fc6a9b; */
   display: flex;
 }
 

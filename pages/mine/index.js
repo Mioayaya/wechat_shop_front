@@ -13,9 +13,12 @@ Page({
       })
     }else {
       const uid = app.globalData.userData.uid;      
-      this.getUserData(uid);      
+      this.getUserData(uid);
     }
-  },  
+  },
+  onShow: function() {
+    this.getUserData(uid);      
+  },
   getUserData(uid) {
     userInfor(uid).then(res => {
       this.setData({

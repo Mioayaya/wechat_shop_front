@@ -1,0 +1,34 @@
+.title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #99cced;
+  padding-top: 10vh;
+  display: block;
+}
+
+.recharge-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  margin-top: 2vh;
+  padding: 0 5vw;
+  height: 17vh;
+}
+
+.recharge-money {
+  border-bottom: #51a7e0 1px solid;
+}
+
+.back-home {
+  position: fixed;
+  z-index: 99;      
+  margin-top: 5vh;
+  margin-left: 5vw;
+  height: 7vw;
+  width: 7vw;
+  text-align: center;
+  line-height: 7vw;
+  font-size: 2rem;
+  background-color: #f0f9fc;
+  border-radius: 50%;
+}

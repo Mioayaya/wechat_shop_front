@@ -25,3 +25,12 @@ export const userInfor = (uid) => {
     method: 'get'
   })
 }
+
+// 充值
+export const userRecharge = (data) => {
+  return request({
+    url: '/api/user/recharge',
+    method: 'POST',
+    data
+  })
+}

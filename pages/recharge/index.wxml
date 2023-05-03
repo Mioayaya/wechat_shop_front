@@ -1,0 +1,16 @@
+<view class="recharge">
+  <view class="back-home" bindtap="bindBack">{{'<'}}</view>
+  <div class="title">充值页面</div>
+  <form catchsubmit="formSubmit">
+    <view class="recharge-card">
+      <view class="recharge-title">充值金额</view>
+      <input bindinput="bindKeyInputMoney" 
+        class="recharge-money" 
+        type="number"          
+      />        
+    </view>
+    <view class="recharge-buttons">
+      <button formType="submit">充值</button>        
+    </view>
+  </form>
+</view>

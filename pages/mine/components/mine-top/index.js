@@ -10,6 +10,11 @@ Component({
   methods: {    
     show() {
       console.log(this.data.userData);
+    },
+    bindRecharge() {
+      wx.redirectTo({
+        url: `/pages/recharge/index`
+      })
     }
   }
 })
