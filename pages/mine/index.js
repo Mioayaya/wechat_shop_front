@@ -16,15 +16,13 @@ Page({
       this.getUserData(uid);
     }
   },
-  onShow: function() {
-    this.getUserData(uid);      
+  onShow: function() {    
   },
   getUserData(uid) {
     userInfor(uid).then(res => {
       this.setData({
         userData: res.data.userData
-      })
-      console.log(res.data.userData);
+      })      
     }).catch(err => console.log(err))
   }
 })

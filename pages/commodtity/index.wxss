@@ -53,7 +53,7 @@
 .contain-spec {
   display: flex;
   flex-direction: column;
-  padding: 2vh 2vw;
+  padding: 1vh 2vw;
   margin-top: 2vh;
   background-color: #fff;
   border-radius: 2vh;
@@ -160,6 +160,57 @@
   line-height: 2.5vh;  
 }
 
+.contain-shop {
+  padding-left: 2vw;
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+  border-radius: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vw;
+  background-color: #fff;
+}
+
+.contain-shop .avatar {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+
+.contain-shop .avatar image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contain-shop .title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+.contain-shop .title .name {
+  color: #f6a9bc;
+  font-size: large;
+  font-weight: 600;
+}
+
+.contain-shop .title .sign {
+  color: #a3afb7;
+  font-size: small;
+}
+
+.contain-shop .follow {
+  display: block;
+  margin-left: 3vw;
+  border: 1rpx solid #f6a9bc;
+  padding: 1vw 2vw;
+  background-color: #f6dfe6;
+  border-radius: 4vw;
+}
 
 .card {
   margin-top: 2vh;

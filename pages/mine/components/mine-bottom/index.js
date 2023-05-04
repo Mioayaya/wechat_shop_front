@@ -55,7 +55,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    bindIcon(e) {
+      const key = e.currentTarget.dataset.key;      
+      if(key === 'collect_3') {
+        wx.navigateTo({
+          url: '/pages/history/index'
+        })
+      }
+    }
   }
 })
 

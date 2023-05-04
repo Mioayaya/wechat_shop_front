@@ -8,14 +8,13 @@ Component({
 
   },
   methods: {    
-    show() {
-      console.log(this.data.userData);
+    show() {      
     },
     bindRecharge() {
       wx.redirectTo({
         url: `/pages/recharge/index`
       })
-    }
+    },    
   }
 })
 

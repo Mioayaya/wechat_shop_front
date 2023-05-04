@@ -13,6 +13,11 @@ Component({
       wx.navigateTo({
         url: '/pages/search/index'
       })
+    },
+    tapMine() {      
+      wx.switchTab({
+        url: '/pages/mine/index'
+      })
     }
   }
 })

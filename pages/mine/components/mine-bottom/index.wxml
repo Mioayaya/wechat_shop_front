@@ -1,6 +1,11 @@
 <view class="mine-bottom">
   <view class="collect">
-    <view class="collect-box" wx:for="{{collectList}}" wx:key="key">
+    <view class="collect-box" 
+      wx:for="{{collectList}}" 
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="bindIcon"
+    >
       <image class="collect-box-icon icon" mode="heightFix" src="{{item.iconSrc}}"/>
       <span class="collect-box-name">{{item.name}}</span>
     </view>

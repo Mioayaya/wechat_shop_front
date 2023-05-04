@@ -7,3 +7,10 @@ export const commodityHomeGet = () => {
     method: 'GET'
   })
 }
+
+export const commoditySearchById = (commodityid) => {
+  return request({
+    url: `/api/commodities/search?commodityid=${commodityid}`,
+    method: 'GET'
+  })
+}

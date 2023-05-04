@@ -32,8 +32,7 @@ Page({
       ['userData.rePassword']: e.detail.value
     })
   },
-  formSubmit(e) {
-    console.log(this.data.userData);
+  formSubmit(e) {    
     if(!this.data.userData.name) {
       wx.showToast({title: '昵称不能为空~',icon: 'error',duration: 2000});
     } else if(!this.data.userData.email) {

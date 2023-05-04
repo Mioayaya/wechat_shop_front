@@ -18,10 +18,6 @@
   padding: 0 5vw;
 }
 
-.mine-avatar-right {
-  width: 48vw;
-}
-
 .mine-avatar-right-l1 {
   display: flex;  
 }
@@ -42,6 +38,10 @@
 .mine-avatar-right-l3 {
   display: flex;
   justify-content: space-between;  
+}
+
+.mine-avatar-right-l3 .inb {
+  margin: 0 3vw;
 }
 
 .mine-avatar-right-l3 .shop {

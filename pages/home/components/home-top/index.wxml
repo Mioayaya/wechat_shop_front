@@ -1,6 +1,6 @@
 <view class="home-top">
   <view class="home-top-avatar">
-    <image src="https://cdn.luogu.com.cn/upload/usericon/1.png" alt=""/>
+    <image src="https://cdn.luogu.com.cn/upload/usericon/1.png" alt="" bindtap="tapMine"/>
   </view>
   <view class="home-top-search" bindtap="tapSearch">
     <image class="search-icon" src="../../../../imges/icons/search.png" alt=""/>

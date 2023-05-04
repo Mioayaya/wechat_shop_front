@@ -8,7 +8,9 @@
 		"pages/register/index",
 		"pages/search/index",
 		"pages/commodtity/index",
-		"pages/recharge/index"
+		"pages/recharge/index",
+		"pages/shop/index",
+		"pages/history/index"
 	],
 	"window": {
 		"navigationStyle": "custom"

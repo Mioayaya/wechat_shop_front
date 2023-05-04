@@ -24,34 +24,29 @@
     </div>
 
     <!-- 参数 规格， 参数有的话 -->
-    <div class="contain-spec">
+    <div class="contain-spec" wx:if="{{commodtityData.data.commodity_canshu}}">
       <div class="contain-spec-s">
         <span class="title">参数</span>
         <div class="content">
-          <div class="box">
-            <div class="top">title</div>
-            <div class="bottom">参数</div>
-          </div>
+          <div class="box">{{commodtityData.data.commodity_canshu}}</div>
         </div>
-      </div>
-
-      <div class="contain-spec-p">
-        <span class="title">规格</span>
-      </div>
+      </div>      
     </div>
 
     <div class="contain-pdd card">
       <span class="contain-pdd-title">这些人拼团,参与可立即拼成</span>      
-    </div>
-
-    <!-- 晒图 -->
-    <div class="contain-photo card">
-      晒图
-    </div>
+    </div>    
 
     <!-- 店铺 -->
-    <div class="sontain-shop card">
-      店铺
+    <div class="contain-shop">
+      <div class="avatar" bindtap="bindShop">
+        <image src="{{shopData.shop_avatar}}" mode="aspectFill"/>
+      </div>
+      <div class="title">
+        <div class="name">{{shopData.shop_name}}</div>
+        <div class="sign">{{shopData.shop_sign}}</div>
+      </div>
+      <div class="follow">+关注</div>
     </div>
 
     <!-- 商品详情 -->
@@ -81,6 +76,11 @@
 
   <!-- 底边工具栏 -->
   <view class="bottom-tap">
-    底边工具栏
+    <div class="left">
+
+    </div>
+    <div class="right">
+      
+    </div>
   </view>
 </view>

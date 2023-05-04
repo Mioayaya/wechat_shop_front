@@ -1,0 +1,23 @@
+<view class="history">
+  <backHome />
+  <div class="title">历史记录</div>
+  <div class="history-contain">
+    <div class="card" 
+      wx:for="{{historyList}}" 
+      wx:key="history_id"
+      bindtap="bindCommodity"
+      data-commodityid="{{item.commodity_id}}"
+    >
+      <div class="left">
+        <image src="{{item.cover_img_src}}" mode="aspectFill"/> 
+      </div>
+      <div class="right">
+        <span class="name">{{item.commodity_name}}</span>
+        <div class="txt">
+          <span class="tiem">{{item.time}}</span>
+          <span class="price">￥ {{item.commodity_price}}</span>
+        </div>
+      </div>
+    </div>
+  </div>  
+</view>
