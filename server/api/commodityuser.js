@@ -17,3 +17,11 @@ export const commodityUserShouCang = (data) => {
     data
   })
 }
+
+// 获取该用户的收藏列表
+export const commodityUserGetCollect = (uid) => {
+  return request({
+    url: `/api/commodityusers/getcollect?uid=${uid}`,
+    method: 'GET'
+  })
+}

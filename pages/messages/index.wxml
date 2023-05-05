@@ -1,4 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-  消息
+  <div class="title">我的消息</div>
+  <view class="contain">
+    内容
+  </view>
 </view>

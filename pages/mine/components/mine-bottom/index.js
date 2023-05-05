@@ -61,7 +61,16 @@ Component({
         wx.navigateTo({
           url: '/pages/history/index'
         })
+      }else if(key === 'collect_1') {
+        wx.navigateTo({
+          url: '/pages/collect/index'
+        })
       }
+    },
+    bindOrder() {
+      wx.navigateTo({
+        url: '/pages/order/index'
+      })
     }
   }
 })

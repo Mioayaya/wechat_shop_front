@@ -11,7 +11,9 @@
 		"pages/recharge/index",
 		"pages/shop/index",
 		"pages/history/index",
-		"pages/chat/index"
+		"pages/chat/index",
+		"pages/collect/index",
+		"pages/order/index"
 	],
 	"window": {
 		"navigationStyle": "custom"
@@ -27,7 +29,7 @@
 			"selectedIconPath": "imges/icons/home2.png"
 		}, {
 			"pagePath": "pages/dynamic/index",
-			"text": "动态",
+			"text": "历史记录",
 			"iconPath": "imges/icons/dynamic1.png",
 			"selectedIconPath": "imges/icons/dynamic2.png"
 		}, {

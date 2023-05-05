@@ -1,6 +1,33 @@
-<view>
-  <backHome delta="1" />
-  <view class="search">  
-    搜索页面
+<view class="search">
+  <backHome />
+  <div class="title">
+    <view class="home-top-search">
+      <image class="search-icon" 
+        src="../../imges/icons/search.png" 
+        alt=""
+        bindtap="bindSearch"
+      />
+      <input class="search-input" type="text" model:value="{{search}}"/>
+    </view>
+  </div>
+  <view class="contain">  
+    <view class="result" wx:if="{{!searchList.length && searchRes}}">暂时没有相关内容~</view>
+    <div class="card" 
+      wx:for="{{searchList}}" 
+      wx:key="history_id"
+      bindtap="bindCommodity"
+      data-commodityid="{{item.commodity_id}}"      
+    >
+      <div class="left">
+        <image src="{{item.cover_img_src}}" mode="aspectFill"/> 
+      </div>
+      <div class="right">
+        <span class="name">{{item.commodity_name}}</span>
+        <div class="txt">
+          <span class="tiem">{{item.time}}</span>
+          <span class="price">￥ {{item.commodity_price}}</span>
+        </div>
+      </div>
+    </div>
   </view>
 </view>

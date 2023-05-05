@@ -11,7 +11,7 @@
     </view>
   </view>
 
-  <view class="my-order">
+  <view class="my-order"bindtap="bindOrder">
     <view class="order-title">
       <view class="title">我的订单</view>
       <view class="all">全部 ></view>

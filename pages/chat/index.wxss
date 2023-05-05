@@ -1,1 +1,25 @@
-/**index.wxss**/
+.title {
+  display: block;  
+  height: 10vh;
+  background-color: #fcecef;
+  text-align: center;  
+  line-height: 10vh;
+  padding-top: 2vh;
+  font-size: larger; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;  
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.contain {
+  display: block;
+  height: 90vh;
+  margin-top: 13vh;
+  padding: 0 2vw;
+}

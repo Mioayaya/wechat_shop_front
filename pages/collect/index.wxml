@@ -1,9 +1,9 @@
-<!--index.wxml-->
-<view class="container">
-  <div class="title">历史记录</div>
-  <div class="history-contain">
+<view class="collect">
+  <backHome />
+  <div class="title">我的收藏</div>
+  <div class="collect-contain">
     <div class="card" 
-      wx:for="{{historyList}}" 
+      wx:for="{{collectList}}" 
       wx:key="history_id"
       bindtap="bindCommodity"
       data-commodityid="{{item.commodity_id}}"
@@ -19,5 +19,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 </view>

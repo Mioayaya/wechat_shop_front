@@ -1,4 +1,7 @@
 <view class="chat">
   <backHome />
-  hh
+  <div class="title">聊天对象名字</div>
+  <view class="contain">
+    内容
+  </view>
 </view>

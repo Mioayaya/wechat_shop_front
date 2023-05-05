@@ -14,3 +14,10 @@ export const commoditySearchById = (commodityid) => {
     method: 'GET'
   })
 }
+
+export const commoditySearchByName = (Name) => {
+  return request({
+    url: `/api/commodities/searchbyname?commodityName=${Name}`,
+    method: 'GET'
+  })
+}
