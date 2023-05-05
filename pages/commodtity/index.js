@@ -52,7 +52,10 @@ Page({
   },
   bindChat() {
     wx.navigateTo({
-      url: '/pages/chat/index'
+      url: '/pages/chat/index',
+      success: res => {
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: this.data.shopData.shop_id })
+      }
     })
   },
   bindBuy() {

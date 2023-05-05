@@ -1,7 +1,10 @@
 <view class="chat">
   <backHome />
-  <div class="title">聊天对象名字</div>
+  <div class="title">{{chatData.shop_name}}</div>
   <view class="contain">
-    内容
+    <div class="list">
+      聊天列表
+    </div>
+    <input class="contain-input" type="text" model:value="{{messages}}"/>
   </view>
 </view>

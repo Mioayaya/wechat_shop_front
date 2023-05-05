@@ -19,7 +19,7 @@
 
 .contain {
   display: block;
-  height: 90vh;
-  margin-top: 13vh;
+  height: 88vh;
+  margin-top: 12vh;
   padding: 0 2vw;
 }
