@@ -1,4 +1,6 @@
+import { commodityUserHas, commodityUserShouCang } from "../../server/api/commodityuser";
 import { historyBrowse } from "../../server/api/history";
+import { orderCreate } from "../../server/api/order";
 import { shopSearch } from "../../server/api/shop";
 
 const app = getApp();
@@ -8,6 +10,8 @@ Page({
     id: '',
     commodtityData: {},
     shopData: {},
+    order: false,
+    shoucang: false,
     text: '不满足包邮条件(校内免费配送)的订单，江浙沪地区10元运费，其他地区15元。可配送区域为中国大陆地区(除特殊偏远地区),收获地址在此之外的地区请勿下单',
   },
 
@@ -31,59 +35,77 @@ Page({
       this.setData({shopData:res.data.shop})
     })
 
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+    commodityUserHas(data).then(res => {      
+      this.setData({
+        shoucang: res.data.shoucang?true:false
+      })
+    })
 
   },
   bindShop() {
     wx.navigateTo({
       url: '/pages/shop/index'
+    })
+  },
+  bindChat() {
+    wx.navigateTo({
+      url: '/pages/chat/index'
+    })
+  },
+  bindBuy() {
+    this.setData({
+      order: true
+    })    
+  },
+  bindClose() {
+    this.setData({
+      order: false
+    })    
+  },
+  bindShouCang() {
+    const shoucang = !this.data.shoucang;
+    const data = {
+      uid: app.globalData.userData.uid,
+      commodityId: this.data.commodtityData.data.commodity_id,
+      shoucang
+    }
+    commodityUserShouCang(data).then(res => {
+      this.setData({
+        shoucang
+      })
+      wx.showToast({
+        title: res.data.msg,
+        icon: 'success',
+        duration: 2000
+      })
+    })
+  },
+  bindOrder() {    
+    const data = {
+      commodityId: this.data.commodtityData.data.commodity_id,
+      uid: app.globalData.userData.uid,
+      price: this.data.commodtityData.data.commodity_price,
+      shopId: this.data.commodtityData.data.shop_id
+    }
+
+    orderCreate(data).then(res => {
+      const { flag,msg } = res.data;      
+      if(flag==='true') {
+        this.setData({
+          order: false
+        })
+        wx.showToast({
+          title: msg,
+          icon: 'success',
+          duration: 2000
+        })        
+      }else {
+        wx.showToast({
+          title: msg,
+          icon: 'error',
+          duration: 2000
+        })
+      }
     })
   }
 })

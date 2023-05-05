@@ -10,7 +10,8 @@
 		"pages/commodtity/index",
 		"pages/recharge/index",
 		"pages/shop/index",
-		"pages/history/index"
+		"pages/history/index",
+		"pages/chat/index"
 	],
 	"window": {
 		"navigationStyle": "custom"

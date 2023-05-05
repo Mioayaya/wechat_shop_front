@@ -14,16 +14,6 @@
   object-fit: cover;
 }
 
-.bottom-tap {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 8vh;
-  border-top: 1rpx #efefef solid;
-  background-color: #fff;
-}
-
 .contain-title {
   display: flex;
   flex-direction: column;
@@ -83,10 +73,6 @@
 
 .contain-pdd {
   height: 5vh;
-}
-
-.contain-photo {
-  
 }
 
 .contain-detail {
@@ -221,4 +207,83 @@
   padding-top: 2vh;
   padding-left: 2vw;
   background-color: #fff;
+}
+
+.bottom-tap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  border-top: 1rpx #efefef solid;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-tap .left {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-tap .left .icon {
+  width: 7vw;
+  height: 7vw;
+}
+
+.bottom-tap .right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-tap .right .buy {
+  border: 1rpx solid #f6a9bc;
+  padding: 1vw 2vw;
+  background-color: #f6dfe6;
+  border-radius: 4vw;
+}
+
+.order {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255,0.5);  
+}
+
+.order .top {
+  flex: 2;
+}
+
+.order .bottom {
+  flex: 3;
+  background-color: #fff;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  border-radius: 3vw;
+}
+
+.price {
+  font-size: large;
+  color: #f6a9bc;
+}
+
+.l-2 {
+  border: 1rpx solid #f6a9bc;
+  padding: 1vw 2vw;
+  background-color: #f6dfe6;
+  border-radius: 4vw;
 }

@@ -77,10 +77,25 @@
   <!-- 底边工具栏 -->
   <view class="bottom-tap">
     <div class="left">
-
+      <image class="icon" src="/imges/icons/dianpu.png" bindtap="bindShop"/>
+      <image class="icon" src="/imges/icons/kefu.png" bindtap="bindChat"/>
+      <image class="icon" src="/imges/icons/shoucangpng.png" wx:if="{{!shoucang}}" bindtap="bindShouCang"/>
+      <image class="icon" src="/imges/icons/shoucang2.png" wx:if="{{shoucang}}" bindtap="bindShouCang"/>
+      
     </div>
     <div class="right">
-      
+      <div class="buy" bindtap="bindBuy">立即购买</div>
+    </div>
+  </view>
+
+  <view class="order" wx:if="{{order}}">
+    <div class="top" bindtap="bindClose"></div>
+    <div class="bottom">
+      <div class="l-1">
+        <image class="img" src="{{commodtityData.data.cover_img_src}}" mode="aspect"/>
+      </div>
+        <div class="price">￥ {{commodtityData.data.commodity_price}}</div>
+      <div class="l-2" bindtap="bindOrder">立即支付</div>
     </div>
   </view>
 </view>
