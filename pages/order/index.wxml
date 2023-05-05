@@ -2,6 +2,25 @@
   <backHome />
   <div class="title">我的订单</div>
   <div class="order-contain">
-    订单列表
+    <div class="card" 
+      wx:for="{{orderList}}" 
+      wx:key="history_id"
+      bindtap="bindCommodity"
+      data-commodityid="{{item.commodity_id}}"
+    >
+      <div class="left">
+        <image src="{{item.cover_img_src}}" mode="aspectFill"/> 
+      </div>
+      <div class="right">
+        <span class="name">{{item.commodity_name}}</span>
+        <div class="txt">
+          <span class="tiem">{{item.time}}</span>
+          <div class="space">
+            <span class="price">￥ {{item.commodity_price}}</span>
+            <span class="state">{{item.state}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </view>

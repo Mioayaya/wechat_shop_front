@@ -8,3 +8,11 @@ export const orderCreate = (data) => {
     data
   })
 }
+
+// 根据id查询总订单
+export const orderFindById = (uid) => {
+  return request({
+    url: `/api/order/find?uid=${uid}`,
+    method: 'GET',
+  })
+}

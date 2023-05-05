@@ -1,4 +1,49 @@
-<view class="shop">
-  <homeBack />
-  商品页面
+<view class="shop">  
+  <view class="back-home" bindtap="bindBack">{{'<'}}</view>
+  <div class="title">    
+    <view class="home-top-search">
+      <image  class="avatar" src="{{shopData.shop_avatar}}" mode="aspectFill"/>
+      <image class="search-icon" 
+        src="../../imges/icons/search.png" 
+        alt=""
+        bindtap="bindSearch"
+      />
+      <input class="search-input" type="text" model:value="{{search}}"/>
+    </view>
+  </div>  
+  <scroll-view class="home-bottom-scroll contain" scroll-y="true" enable-flex>
+    <div class="top">
+      <div class="left">
+        <div class="card" 
+          wx:for="{{commoditiesL}}" 
+          wx:key="commodity_id" 
+          bindtap="touchCommodtity" 
+          data-item="{{item}}"
+        >
+          <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
+          <span class="card-name">{{item.commodity_name}}</span>
+          <view class="price">
+            <span>￥</span> 
+            <span class="card-price">{{item.commodity_price}}</span>
+          </view>
+        </div>
+      </div>
+      <div class="right">
+        <div class="card" wx:for="{{commoditiesR}}" wx:key="commodity_id" bindtap="touchCommodtity" data-item="{{item}}">
+          <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
+          <span class="card-name">{{item.commodity_name}}</span>
+          <view class="price">
+            <span>￥</span> 
+            <span class="card-price">{{item.commodity_price}}</span>
+          </view>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      已经到底了
+    </div>
+
+  </scroll-view>
+
 </view>

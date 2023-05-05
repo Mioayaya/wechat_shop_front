@@ -44,7 +44,10 @@ Page({
   },
   bindShop() {
     wx.navigateTo({
-      url: '/pages/shop/index'
+      url: '/pages/shop/index',
+      success: res => {
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: this.data.shopData.shop_id })
+      }
     })
   },
   bindChat() {
