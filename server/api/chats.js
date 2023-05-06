@@ -17,3 +17,11 @@ export const chatsGetAll = (data) => {
     data
   })
 }
+
+export const chatGetChatList = (data) => {
+  return request({
+    url: '/api/chat/chatList',
+    method: 'POST',
+    data
+  })
+}

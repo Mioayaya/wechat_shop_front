@@ -23,3 +23,22 @@
   margin-top: 13vh;
   padding: 0 2vw;
 }
+
+.card {
+  display: flex;
+  height: 7vh;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.card .img {  
+  border-radius: 50%;
+  width: 7vh;
+  height: 7vh;
+}
+
+.card .msg {
+  flex: 1;
+  margin-left: 2vw;
+  color: #888;
+}

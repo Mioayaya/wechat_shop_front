@@ -2,6 +2,17 @@
 <view class="container">
   <div class="title">我的消息</div>
   <view class="contain">
-    内容
+    <scroll-view class="list" scroll-y="true" enable-flex>
+      <div class="card" 
+        wx:for="{{chatList}}" 
+        wx:key="chat_id"
+        data-uid="{{item.uid}}"
+        data-youid="{{item.you_id}}"
+        bindtap="bindChat"
+      >
+        <image class="img" src="{{item.you_avatar}}" mode="aspectFill"/>
+        <div class="msg">{{item.chats}}</div>
+      </div>
+    </scroll-view>
   </view>
 </view>
