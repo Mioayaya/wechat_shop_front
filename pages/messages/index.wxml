@@ -10,7 +10,7 @@
         data-youid="{{item.you_id}}"
         bindtap="bindChat"
       >
-        <image class="img" src="{{item.you_avatar}}" mode="aspectFill"/>
+        <image class="img" src="{{uid===item.uid?item.you_avatar:item.uid_avatar}}" mode="aspectFill"/>
         <div class="msg">{{item.chats}}</div>
       </div>
     </scroll-view>

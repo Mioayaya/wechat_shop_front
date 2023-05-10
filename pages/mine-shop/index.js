@@ -1,3 +1,4 @@
+import { chatGetChatList } from "../../server/api/chats";
 import { shopGetAllCommodities, shopGetAllOrders } from "../../server/api/shop";
 
 const app = getApp();
@@ -22,6 +23,7 @@ Page({
     orderList: [],
     commodityListL: [],
     commodityListR: [],
+    chatList: [],
   },
   onLoad: function (options) {    
     const data = {
@@ -40,6 +42,13 @@ Page({
         this.setData({
           commodityListL: res.data.commoditiesL, 
           commodityListR: res.data.commoditiesR,
+          currentTap: key
+        })
+      })
+    }else if(key === 'tap_4') {      
+      chatGetChatList({uid:app.globalData.userData.shop_id}).then(res => {          
+        this.setData({
+          chatList: res.data.chatList,
           currentTap: key
         })
       })

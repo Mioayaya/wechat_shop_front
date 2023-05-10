@@ -8,8 +8,7 @@
   flex: 1;
 }
 
-.home-bottom-scroll .left {
-  margin-left: 2vw;
+.home-bottom-scroll .left {  
   margin-right: 1vw;
 }
 

@@ -1,3 +1,12 @@
 <view class="list-chat">
-  聊天列表
+  <div class="card" 
+    wx:for="{{chatList}}" 
+    wx:key="chat_id"
+    data-uid="{{item.uid}}"
+    data-youid="{{item.you_id}}"
+    bindtap="bindChat"
+  >
+    <image class="img" src="{{uid!==item.uid?item.you_avatar:item.uid_avatar}}" mode="aspectFill"/>
+    <div class="msg">{{item.chats}}</div>
+  </div>
 </view>

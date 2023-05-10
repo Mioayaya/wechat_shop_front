@@ -4,12 +4,14 @@ const app = getApp();
 
 Page({
   data: {
-    chatList: [],    
+    chatList: [],
+    uid: app.globalData.userData.uid
   },
-  onLoad: function(option) {
+  onLoad: function(option) {    
     chatGetChatList({uid:app.globalData.userData.uid}).then(res => {          
       this.setData({
-        chatList: res.data.chatList
+        chatList: res.data.chatList,
+        uid: app.globalData.userData.uid
       })
     })
   },

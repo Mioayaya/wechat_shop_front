@@ -1,27 +1,26 @@
+const app =getApp();
 
-/**
- * index
- */
 Component({
-  /**
-   * 组件的属性列表
-   */
   properties: {
-
+    chatList: {
+      type: Array
+    }
   },
-
-  /**
-   * 组件的初始数据
-   */
   data: {
-
+    uid: app.globalData.userData.shop_id
   },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
-
+    bindChat(e) {
+      const shop_id = e.currentTarget.dataset.uid === app.globalData.userData.shop_id ? 
+        e.currentTarget.dataset.youid : 
+        e.currentTarget.dataset.uid;
+      wx.navigateTo({
+        url: '/pages/chat-shop/index',
+        success: res => {
+          res.eventChannel.emit('acceptDataFromOpenerPage', { data: shop_id })
+        }
+      })
+    }
   }
 })
 

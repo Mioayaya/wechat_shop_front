@@ -1,0 +1,16 @@
+<view class="chat">
+  <backHome />
+  <div class="title">{{chatData.user_name}}</div>
+  <view class="contain">
+    <scroll-view class="list" scroll-y="true" enable-flex>
+      <div class="card" wx:for="{{chatList}}" wx:key="chat_id">
+        <image class="img" src="{{item.uid_avatar}}" mode="aspectFill"/>
+        <div class="msg">{{item.chats}}</div>
+      </div>
+    </scroll-view>
+    <div class="send">
+      <input class="contain-input" type="text" model:value="{{messages}}"/>
+      <span class="send-message" bindtap="bindSendMessage">发送</span>
+    </div>
+  </view>
+</view>

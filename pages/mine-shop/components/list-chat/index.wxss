@@ -1,4 +1,18 @@
+.card {
+  display: flex;
+  height: 7vh;
+  align-items: center;
+  margin-bottom: 2vw;
+}
 
-/**
- * index
- */
+.card .img {  
+  border-radius: 50%;
+  width: 7vh;
+  height: 7vh;
+}
+
+.card .msg {
+  flex: 1;
+  margin-left: 2vw;
+  color: #888;
+}

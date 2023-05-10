@@ -19,7 +19,7 @@
         commodityListR="{{commodityListR}}"
         />
       <list-add wx:elif="{{currentTap === 'tap_3'}}"/>
-      <list-chat wx:elif="{{currentTap === 'tap_4'}}"/>
+      <list-chat wx:elif="{{currentTap === 'tap_4'}}" chatList="{{chatList}}"/>
     </scroll-view>
   </div>
 </view>

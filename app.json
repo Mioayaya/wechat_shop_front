@@ -14,7 +14,8 @@
 		"pages/chat/index",
 		"pages/collect/index",
 		"pages/order/index",
-		"pages/mine-shop/index"
+		"pages/mine-shop/index",
+		"pages/chat-shop/index"
 	],
 	"window": {
 		"navigationStyle": "custom"

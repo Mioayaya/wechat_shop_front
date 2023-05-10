@@ -34,3 +34,11 @@ export const userRecharge = (data) => {
     data
   })
 }
+
+// 根据id返回用户信息
+export const userSearchById = (uid) => {
+  return request({
+    url: `/api/user/search?uid=${uid}`,
+    method: 'GET'
+  })
+}
