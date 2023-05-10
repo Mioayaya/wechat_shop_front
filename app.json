@@ -13,7 +13,8 @@
 		"pages/history/index",
 		"pages/chat/index",
 		"pages/collect/index",
-		"pages/order/index"
+		"pages/order/index",
+		"pages/mine-shop/index"
 	],
 	"window": {
 		"navigationStyle": "custom"

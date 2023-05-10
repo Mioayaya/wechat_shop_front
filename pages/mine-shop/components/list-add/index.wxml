@@ -1,0 +1,52 @@
+<view class="list-add">
+  <div class="cover">
+    <div class="title">选择商品封面--</div>  
+    <button class="btn" bindtap="chooseImage">选择图片</button>
+    <div class="img">
+      <image class="imgs" src="{{imageSrc}}" mode="aspectFill"/>    
+    </div>
+  </div>
+
+  <div class="content cover">
+    <div class="title">选择内容图片--</div>  
+    <button class="btn" bindtap="chooseContentImage">选择图片</button>
+    <div class="img">
+      <image class="imgs" wx:for="{{contentList}}" src="{{item}}" mode="aspectFill"/>
+    </div>
+  </div>
+
+  <div class="detail cover">
+    <div class="title">选择详情图片--</div>  
+    <button class="btn" bindtap="chooseDetailImage">选择图片</button>
+    <div class="img">
+      <image class="imgs" wx:for="{{detailList}}" src="{{item}}" mode="aspectFill"/>
+    </div>
+  </div>
+
+  <view class="container">
+    <form bindsubmit="submitForm">
+      <view class="form-group">
+        <view class="label">商品名称</view>
+        <input type="text" name="productName" placeholder="请输入商品名称" bindinput="handleInput" />
+      </view>
+      <view class="form-group">
+        <view class="label">商品详情</view>
+        <input type="text" name="productDetail" placeholder="请输入商品详情" bindinput="handleInput" />        
+      </view>
+      <view class="form-group">
+        <view class="label">价格</view>
+        <input type="number" name="price" placeholder="请输入价格" bindinput="handleInput" />
+      </view>
+      <view class="form-group">
+        <view class="label">参数</view>
+        <input type="text" name="parameters" placeholder="请输入参数" bindinput="handleInput" />
+      </view>
+      <view class="form-group">
+        <view class="label">规格</view>
+        <input type="text" name="specifications" placeholder="请输入规格" bindinput="handleInput" />
+      </view>
+      <button formType="submit">提交</button>
+    </form>
+  </view>
+
+</view>

@@ -16,3 +16,21 @@ export const shopGetAllCommodities = (shopId) => {
     method: 'get'
   })
 }
+
+// 获取该店铺所有订单
+export const shopGetAllOrders = (data) => {
+  return request({
+    url: '/api/shop/orders',
+    method: 'POST',
+    data
+  })
+}
+
+// 设置商品发货
+export const shopFahuo = (data) => {
+  return request({
+    url: '/api/shop/fahuo',
+    method: 'POST',
+    data
+  })
+}

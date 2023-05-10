@@ -1,0 +1,33 @@
+.list-add {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+}
+
+button {
+  background-color: antiquewhite;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;  
+  margin-top: 3vw;
+}
+
+.title {
+  margin-bottom: 2vw;
+}
+
+.imgs {
+  align-self: center;
+  margin-top: 2vw;
+}
+
+.img {
+  display: flex;
+}
+
+.container {
+  margin-top: 3vw;
+  margin-bottom: 5vh;
+}

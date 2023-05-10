@@ -1,28 +1,3 @@
-.title {
-  display: block;  
-  height: 10vh;
-  background-color: #fcecef;
-  text-align: center;  
-  line-height: 10vh;
-  padding-top: 2vh;
-  font-size: larger; 
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;  
-}
-
-.order {
-  display: flex;
-  flex-direction: column;
-}
-
-.order-contain {
-  height: 90vh;
-  margin-top: 13vh;
-  padding: 0 2vw;
-}
-
 .card {
   display: flex;
   height: 15vh;
@@ -71,11 +46,11 @@
 .state {
   display: inline-block;
   margin-right: 5vw;
-  color: orange;
+  color: orange;  
 }
 
 .fahuo {
-  margin-left: -10vw;
+  margin-left: -15vw;
   color: black;
 }
 

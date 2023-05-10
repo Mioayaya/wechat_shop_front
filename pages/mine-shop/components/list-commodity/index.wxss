@@ -1,0 +1,58 @@
+.top {
+  display: flex;  
+}
+
+.home-bottom-scroll .left,.home-bottom-scroll .right {  
+  display: flex;
+  flex-direction: column;  
+  flex: 1;
+}
+
+.home-bottom-scroll .left {
+  margin-left: 2vw;
+  margin-right: 1vw;
+}
+
+.home-bottom-scroll .right {
+  margin-left: 1vw;
+  margin-right: 2vw;
+}
+
+
+.card {
+  margin-top: 1vh;
+  width: 47vw;
+  border-radius: 1vh;
+  background-color: #fff;
+  padding-bottom: 2vh;
+}
+
+.card-cover {
+  width: 47vw;
+  border-top-right-radius: 1vh;
+  border-top-left-radius: 1vh;
+}
+
+.card-name {
+  width: 43vw;
+  margin: auto;  
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  margin: 0 0 0 2vw;
+  color: #fc6a9b;
+}
+
+.card-price {
+  font-size: 1.5rem;
+}
+
+.bottom {
+  display: block;
+  margin-top: 2vw;
+  text-align: center;
+}

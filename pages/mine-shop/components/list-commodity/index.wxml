@@ -1,0 +1,31 @@
+<view class="list-commodity home-bottom-scroll">
+  <div class="top">
+      <div class="left">
+        <div class="card" 
+          wx:for="{{commodityListL}}" 
+          wx:key="commodity_id" 
+          bindtap="touchCommodtity" 
+          data-item="{{item}}"
+        >
+          <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
+          <span class="card-name">{{item.commodity_name}}</span>
+          <view class="price">
+            <span>￥</span> 
+            <span class="card-price">{{item.commodity_price}}</span>
+          </view>
+        </div>
+      </div>
+      <div class="right">
+        <div class="card" wx:for="{{commodityListR}}" wx:key="commodity_id" bindtap="touchCommodtity" data-item="{{item}}">
+          <image class="card-cover" src="{{item.cover_img_src}}" mode="widthFix"/>
+          <span class="card-name">{{item.commodity_name}}</span>
+          <view class="price">
+            <span>￥</span> 
+            <span class="card-price">{{item.commodity_price}}</span>
+          </view>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">已经到底了~</div>
+</view>

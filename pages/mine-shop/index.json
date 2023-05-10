@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "backHome": "/components/backHome/index",
+    "list-order": "components/list-order/index",
+    "list-commodity": "components/list-commodity/index",
+    "list-add": "components/list-add/index",
+    "list-chat": "components/list-chat/index"    
+  }
+}

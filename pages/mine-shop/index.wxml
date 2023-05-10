@@ -1,0 +1,25 @@
+<view class="mine-shop">
+  <view class="back-home" bindtap="bindBack">{{'<'}}</view>
+  <div class="title">我的店铺</div>
+  <div class="box">
+    <div class="tap">
+      <div class="tap-item {{currentTap===item.key?'choose':''}}" 
+        wx:for="{{tap}}" 
+        wx:key="tap_1"
+        bindtap="bindTap"
+        data-key="{{item.key}}"
+      >
+        {{item.name}}
+      </div>
+    </div>
+    <scroll-view class="contain" scroll-y="true" enable-flex>
+      <list-order wx:if="{{currentTap === 'tap_1'}}" orderList="{{orderList}}"/>
+      <list-commodity wx:elif="{{currentTap === 'tap_2'}}"
+        commodityListL="{{commodityListL}}"
+        commodityListR="{{commodityListR}}"
+        />
+      <list-add wx:elif="{{currentTap === 'tap_3'}}"/>
+      <list-chat wx:elif="{{currentTap === 'tap_4'}}"/>
+    </scroll-view>
+  </div>
+</view>

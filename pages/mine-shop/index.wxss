@@ -1,0 +1,66 @@
+.mine-shop {
+  position: relative;
+}
+
+.back-home {
+  position: fixed;
+  z-index: 99;      
+  margin-top: -7vh;
+  margin-left: 5vw;
+  height: 7vw;
+  width: 7vw;
+  text-align: center;
+  line-height: 7vw;
+  font-size: 2rem;
+  background-color: #f0f9fc;
+  border-radius: 50%;
+}
+
+.title {
+  display: block;  
+  height: 10vh;
+  background-color: #fcecef;
+  text-align: center;  
+  line-height: 10vh;
+  padding-top: 2vh;
+  font-size: larger; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.box {
+  margin-top: 12vh;
+  display: block;
+  height: 88vh;
+}
+
+.tap {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fcecef;  
+}
+
+.tap-item {
+  flex: 1;
+  text-align: center;
+}
+
+.choose::after {
+  content: "";
+  display: block;
+  background-color: red;
+  height: 1rpx;
+  width: 35%;
+  margin: auto;
+  margin-top: 2vw;  
+}
+
+.contain {
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+}

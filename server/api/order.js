@@ -16,3 +16,12 @@ export const orderFindById = (uid) => {
     method: 'GET',
   })
 }
+
+// 确认收货
+export const orderShouHuo = (data) => {
+  return request({
+    url: '/api/order/shouhuo',
+    method: 'POST',
+    data
+  })
+}

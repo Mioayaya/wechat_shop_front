@@ -1,12 +1,9 @@
-<view class="order">
-  <backHome />
-  <div class="title">我的订单</div>
-  <div class="order-contain">
-    <div class="card" 
-      wx:for="{{orderList}}" 
-      wx:key="history_id"    
-    >
-      <div class="left">
+<view class="list-order">
+  <div class="card" 
+    wx:for="{{orderList}}" 
+    wx:key="commodity_id"    
+  >
+    <div class="left">
         <image src="{{item.cover_img_src}}" 
           mode="aspectFill"
           bindtap="bindCommodity"
@@ -21,15 +18,14 @@
             <span class="price">￥ {{item.commodity_price}}</span>
             <span class="state {{item.state==='待收货'?'shouhuo':''}} {{item.state==='已完成'?'done':''}}">{{item.state}}</span>
             <span class="state fahuo" 
-              wx:if="{{item.state==='待收货'}}" 
-              bindtap="bindShouHuo"
+              wx:if="{{item.state==='待发货'}}" 
+              bindtap="bindFaHuo"
               data-orderid="{{item.order_id}}"
             >
-              确认收货
+              发货
             </span>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </view>

@@ -14,7 +14,12 @@ Component({
       wx.redirectTo({
         url: `/pages/recharge/index`
       })
-    },    
+    },
+    bindMineShop() {
+      wx.navigateTo({
+        url: '/pages/mine-shop/index'
+      })
+    }
   }
 })
 
