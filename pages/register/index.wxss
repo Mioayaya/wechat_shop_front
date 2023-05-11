@@ -2,7 +2,7 @@
   text-align: center;
   font-size: 1.5em;
   color: #99cced;
-  margin-top: 2vh;
+  margin-top: 2vh;  
 }
 
 .register-card {
@@ -36,4 +36,8 @@
   width: 45%;
   border-radius: 20rpx;
   background-color: #f0f1f5;
+}
+
+.fix {
+  padding-top: 6vh;
 }

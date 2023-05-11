@@ -68,6 +68,11 @@ Page({
     }
   },
   bindindTapToRegister() {
-    wx.redirectTo({url:'/pages/register/index'});
+    wx.navigateTo({url:'/pages/register/index'});
+  },
+  bindBack() {
+    wx.switchTab({
+      url: '/pages/home/index'
+    })
   }
 })

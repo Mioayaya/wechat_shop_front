@@ -1,3 +1,7 @@
+.login {
+  padding-top: 5vh;
+}
+
 .login-title {
   text-align: center;
   font-size: 1.5em;
@@ -36,4 +40,18 @@
   width: 45%;
   border-radius: 20rpx;
   background-color: #f0f1f5;
+}
+
+.back-home {
+  position: fixed;
+  z-index: 99;      
+  margin-top: 5vh;
+  margin-left: 5vw;
+  height: 7vw;
+  width: 7vw;
+  text-align: center;
+  line-height: 7vw;
+  font-size: 2rem;
+  background-color: #f0f9fc;
+  border-radius: 50%;
 }
